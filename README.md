@@ -1,4 +1,6 @@
-##tv_lvgl_theme Esphome Component
+#tv_lvgl_theme Esphome Component
+
+Release 0.0.1
 
 The `tv_lvgl_theme` component is a flexible tool for customizing the visual appearance of LVGL objects in ESPHome. It allows you to create themes that define the colors, fonts, and sizes of various elements on the screen, buttons, and labels and other widgets.
 This allows you to create a consistent and visually appealing user interface for your ESPHome projects.
@@ -79,6 +81,20 @@ style_screen: !lambda |-
 | **`setup_lambda`** | A lambda that is called when the theme is first created. | `sender` a pointer to the tv_lvgl_theme object. `theme` is a pointer to the lv_theme_t object. |
 | **`after_setup_lambda`** | A lambda that is called after the theme has been changed/updated. | `sender` a pointer to the tv_lvgl_theme object. `theme` is a pointer to the lv_theme_t object. |
 | **`apply_lambda`** | A lambda that is called to apply the theme to all objects. Here you can add code to change styles not directly supported by the component. | `sender` a pointer to the tv_lvgl_theme object. `obj` pointer the lvgl object to modify. |
+
+**Callable c++ (lambda) functions:**
+
+| Parameter | Description | Argument |
+|---|---|---|
+| **`setPrimaryColor_lv`** | Call this to modify primary color. | lv_color_t |
+| **`setPrimaryColor`** | Call this to modify primary color. | uint32_t |
+| **`setSecondaryColor_lv`** | Call this to modify primary color. | lv_color_t |
+| **`setSecondaryColor`** | Call this to modify primary color. | uint32_t |
+| **`selectParentTheme`** | Select parent theme type | Se select_parent_theme parameter. |
+| **`setParentTheme`** | Set the user theme. | lv_theme_t |
+| **`initialize_theme`** | Initialize/reinitalize theme. | void |
+| **`set_apply_theme`** | Make initialize apply the theme. | bool |
+| **`set_force_apply_theme`** | When apply, force update to all current objects | bool |
 
 
 **Complete usage example:**
