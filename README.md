@@ -1,5 +1,5 @@
 
-#tv_lvgl_theme Esphome Component
+# tv_lvgl_theme Esphome Component
 
 Release 0.0.1
 
