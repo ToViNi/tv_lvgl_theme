@@ -91,7 +91,7 @@ style_screen: !lambda |-
 | **`setPrimaryColor`** | Call this to modify primary color. | uint32_t |
 | **`setSecondaryColor_lv`** | Call this to modify primary color. | lv_color_t |
 | **`setSecondaryColor`** | Call this to modify primary color. | uint32_t |
-| **`selectParentTheme`** | Select parent theme type | Se select_parent_theme parameter. |
+| **`selectParentTheme`** | Select parent theme type | See select_parent_theme parameter. |
 | **`setParentTheme`** | Set the user theme. | lv_theme_t |
 | **`initialize_theme`** | Initialize/reinitalize theme. | void |
 | **`set_apply_theme`** | Make initialize apply the theme. | bool |
